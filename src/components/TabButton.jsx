@@ -1,13 +1,13 @@
 import React from 'react'
 
-export const TabButton = ({children, onSelect}) => {
+export const TabButton = ({children, onSelect, isSelected}) => {
     function handleClick(){
         console.log("clicked")
     }
     
     return (
         <li>
-            <button onClick={onSelect}>
+            <button className={isSelected ? 'active':undefined} onClick={onSelect}>
                 {children}
             </button>
         </li>
