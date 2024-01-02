@@ -22,13 +22,13 @@ function App() {
         <section id="core-concepts">
           <h2>Core Concepts</h2>
           <ul>
-          {CORE_CONCEPTS.map((conceptItem)=>
-            
+            {CORE_CONCEPTS.map((conceptItem) =>
 
-            <CoreConcepts {...conceptItem} />
 
-          )}
-           
+              <CoreConcepts {...conceptItem} />
+
+            )}
+
           </ul>
         </section>
         <section id="examples">
@@ -42,6 +42,16 @@ function App() {
               onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton isSelected={selectedTopic === 'state'}
               onSelect={() => handleSelect('state')}>State</TabButton>
+            <TabButton isSelected={selectedTopic === 'event'}
+              onSelect={() => handleSelect('event')}>Event</TabButton>
+            <TabButton isSelected={selectedTopic === 'lists'}
+              onSelect={() => handleSelect('lists')}>Lists</TabButton>
+            <TabButton isSelected={selectedTopic === 'forms'}
+              onSelect={() => handleSelect('forms')}>Forms</TabButton>
+            <TabButton isSelected={selectedTopic === 'router'}
+              onSelect={() => handleSelect('router')}>React Router</TabButton>
+            <TabButton isSelected={selectedTopic === 'memo'}
+              onSelect={() => handleSelect('memo')}>Memo</TabButton>
           </menu>
           {!selectedTopic ? <p>Please select a topic.</p> : <div id="tab-content">
 

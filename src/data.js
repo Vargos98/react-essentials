@@ -79,4 +79,130 @@ function Counter() {
   );
 }`,
   },
+  event: {
+    title: 'Event',
+    description:
+      'Just like HTML DOM events, React can perform actions based on user events.',
+    code: `
+    function Football() {
+      const shoot = () => {
+        alert("Great Shot!");
+      }
+    
+      return (
+        <button onClick={shoot}>Take the shot!</button>
+      );
+    }
+    
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Football />);
+}`,
+  },
+  lists: {
+    title: 'Lists',
+    description:
+      'In React, you will render lists with some type of loop. The JavaScript map() array method is generally preferred.',
+    code: `
+    function Car(props) {
+      return <li>I am a { props.brand }</li>;
+    }
+    
+    function Garage() {
+      const cars = ['Ford', 'BMW', 'Audi'];
+      return (
+        <>
+          <h1>Who lives in my garage?</h1>
+          <ul>
+            {cars.map((car) => <Car brand={car} />)}
+          </ul>
+        </>
+      );
+    }
+    
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Garage />);
+    
+    
+}`,
+  },
+  forms: {
+    title: 'Forms',
+    description:
+      'Just like in HTML, React uses forms to allow users to interact with the web page.',
+    code: `
+    function MyForm() {
+      return (
+        <form>
+          <label>Enter your name:
+            <input type="text" />
+          </label>
+        </form>
+      )
+    }
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<MyForm />);
+    
+    
+}`,
+  },
+  router: {
+    title: 'React Router',
+    description:
+      `Create react app does not include page routing, 
+       React router is the most popular solution, because of which page reloading does not occur.
+
+       Add React Router : 
+       npm i -D react-router-dom
+      `,
+    code: `
+    import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+    
+}`,
+  },
+  memo: {
+    title: 'Memo',
+    description:
+      'Using memo will cause React to skip rendering a component if its props have not changed. This can improve performance',
+    code: `
+    import { memo } from "react";
+    const Todos = ({ todos }) => {
+      console.log("child render");
+      return (
+          <>
+            <h2>My Todos</h2>
+              {todos.map((todo, index) => {
+                return <p key={index}>{todo}</p>;
+              })}
+          </>
+      );
+    };
+    export default memo(Todos);   
+    
+}`,
+  },
+
 };
