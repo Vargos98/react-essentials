@@ -1,5 +1,6 @@
 import React from 'react'
-import reacImg from './assets/react-core-concepts.png';
+import reacImg from '../../assets/react-core-concepts.png'
+import './Header.css'
 const description = ['Fundamental', 'Crucial','Core'];
 function genRandomInt(max){
   return Math.floor(Math.random() * (max+1));
@@ -9,7 +10,6 @@ function genRandomInt(max){
 const Header = () => {
   const loop = description[genRandomInt(2)];
  
-
   return (
     <div>
         <header>
