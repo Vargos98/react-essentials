@@ -9,7 +9,7 @@ import { CORE_CONCEPTS } from './data.js';
 
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState('components')
+  const [selectedTopic, setSelectedTopic] = useState();
   // let tabContent = "Please click a button!"
   function handleSelect(selectedButton) {
     // tabContent = selectedButton;\
@@ -36,7 +36,8 @@ function App() {
             <TabButton onSelect={() => handleSelect('props')}>Props</TabButton>
             <TabButton onSelect={() => handleSelect('state')}>State</TabButton>
           </menu>
-          <div id="tab-content">
+          {!selectedTopic ? <p>Please select a topic.</p> : <div id="tab-content">
+
             <h3>{EXAMPLES[selectedTopic].title}</h3>
             <p>{EXAMPLES[selectedTopic].description}</p>
             <pre>
@@ -44,7 +45,8 @@ function App() {
                 {EXAMPLES[selectedTopic].code}
               </code>
             </pre>
-          </div>
+          </div>}
+
         </section>
       </main>
 
