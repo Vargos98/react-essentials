@@ -1,5 +1,5 @@
 import React from 'react'
-import { CORE_CONCEPTS } from './data'
+
 const CoreConcepts = ({image, title,description}) => {
   return (
    <li>
