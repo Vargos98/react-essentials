@@ -1,4 +1,7 @@
 Live link : https://react-essentials-rosy.vercel.app/
 
-project images : ![Screenshot (1)](https://github.com/Vargos98/react-essentials/assets/127929058/449318d0-574d-4640-bf7c-2ac45a4068d6)
-![Screenshot (2)](https://github.com/Vargos98/react-essentials/assets/127929058/12347b96-8696-4c9e-99ab-6aaa31eaee4a)
+project images : ![Screenshot (3)](https://github.com/Vargos98/react-essentials/assets/127929058/1f349eff-e10a-473c-a40b-82b6ec879055)
+![Screenshot (4)](https://github.com/Vargos98/react-essentials/assets/127929058/c69d54fe-47c4-4ec0-80cc-32b461bf70fa)
+
+
+
