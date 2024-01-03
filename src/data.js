@@ -204,8 +204,8 @@ root.render(<App />);
     
 }`,
   },
-  memo: {
-    title: 'Memo',
+  hooks: {
+    title: 'Hooks',
     description:
       'Hooker were added to React in version 16.8. Hooks allow fucntion components to have access to state and other React features. Because of this, class components are generally no longer needed.',
     code: `
