@@ -49,7 +49,7 @@ function App() {
             <TabButton isSelected={selectedTopic === 'forms'}
               onSelect={() => handleSelect('forms')}>Forms</TabButton>
             <TabButton isSelected={selectedTopic === 'router'}
-              onSelect={() => handleSelect('router')}>React Router</TabButton>
+              onSelect={() => handleSelect('router')}>Router</TabButton>
             <TabButton isSelected={selectedTopic === 'memo'}
               onSelect={() => handleSelect('memo')}>Memo</TabButton>
              <TabButton isSelected={selectedTopic === 'hooks'}
