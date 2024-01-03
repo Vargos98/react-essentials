@@ -52,6 +52,8 @@ function App() {
               onSelect={() => handleSelect('router')}>React Router</TabButton>
             <TabButton isSelected={selectedTopic === 'memo'}
               onSelect={() => handleSelect('memo')}>Memo</TabButton>
+             <TabButton isSelected={selectedTopic === 'hooks'}
+              onSelect={() => handleSelect('hooks')}>Hooks</TabButton>
           </menu>
           {!selectedTopic ? <p>Please select a topic.</p> : <div id="tab-content">
 
