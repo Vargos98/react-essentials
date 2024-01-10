@@ -207,30 +207,30 @@ root.render(<App />);
   hooks: {
     title: 'Hooks',
     description:
-      'Hooker were added to React in version 16.8. Hooks allow fucntion components to have access to state and other React features. Because of this, class components are generally no longer needed.',
+      'Hooker were added to React in version 16.8. Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.',
     code: `
     import React, { useState } from "react";
     import ReactDOM from "react-dom/client";
 
-        function FavoriteColor() {
-          const [color, setColor] = useState("red");
+    function FavoriteColor() {
+      const [color, setColor] = useState("red");
 
-          return (
-            <>
-              <h1>My favorite color is {color}!</h1>
-                  <button
-                    type="button"
-                    onClick={() => setColor("blue")}>Blue</button>
-                  <button
-                    type="button"
-                    onClick={() => setColor("red")}>Red</button>
-                  <button
-                    type="button"
-                    onClick={() => setColor("pink")}>Pink</button>
-                  <button
-                    type="button"
-                    onClick={() => setColor("green")}>Green</button>
-            </>
+      return (
+        <>
+          <h1>My favorite color is {color}!</h1>
+              <button
+                type="button"
+                onClick={() => setColor("blue")}>Blue</button>
+              <button
+                type="button"
+                onClick={() => setColor("red")}>Red</button>
+              <button
+                type="button"
+                onClick={() => setColor("pink")}>Pink</button>
+              <button
+                type="button"
+                onClick={() => setColor("green")}>Green</button>
+        </>s   
   );
 }
 const root = ReactDOM.createRoot(document.getElementById('root'));

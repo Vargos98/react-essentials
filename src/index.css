@@ -99,16 +99,20 @@ main h2 {
 #examples {
   margin: 3rem auto;
 }
-.btn{
+/* .btn{
   margin-top: 10px;
   display: flex;
  align-items: center;
  gap: 30px;
   
-}
+} */
 
 #examples h2 {
-  font-size: 7vw;
+  font-size: 5vw;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
   justify-content: center;
   
 }
@@ -119,7 +123,6 @@ main h2 {
   display: flex;
   gap: 0.3rem;
   list-style: none;
-  display: flex;
   flex-wrap: wrap;
 }
 
@@ -154,19 +157,21 @@ main h2 {
   border-radius: 6px;
   background-color: #2f1d43;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  overflow: auto;
 
 }
 
 #tab-content h3 {
   margin: 0;
   text-decoration: underline;
-  font-size: 30px;
+  /* font-size: 30px; */
   
 }
-p{
+.p-examples{
   font-weight: 700;
 }
 
 #tab-content code {
-  font-size: 1rem;
+  font-size: 0.8rem;
+  box-sizing: border-box;
 }
