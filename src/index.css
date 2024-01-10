@@ -110,6 +110,7 @@ main h2 {
 #examples h2 {
   font-size: 7vw;
   justify-content: center;
+  
 }
 
 #examples menu {
@@ -158,7 +159,12 @@ main h2 {
 
 #tab-content h3 {
   margin: 0;
+  text-decoration: underline;
+  font-size: 30px;
   
+}
+p{
+  font-weight: 700;
 }
 
 #tab-content code {
