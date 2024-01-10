@@ -99,20 +99,35 @@ main h2 {
 #examples {
   margin: 3rem auto;
 }
+.btn{
+  margin-top: 10px;
+  display: flex;
+ align-items: center;
+ gap: 30px;
+  
+}
 
 #examples h2 {
-  text-align: left;
+  font-size: 4rem;
+ justify-content: center;
 }
 
 #examples menu {
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   padding: 0;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.3rem;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #examples menu button {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  /* gap: 1rem; */
+
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 6px;

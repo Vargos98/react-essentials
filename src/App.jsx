@@ -32,6 +32,7 @@ function App() {
           </ul>
         </section>
         <section id="examples">
+          <div className="btn">
           <h2>Examples</h2>
           <menu>
             <TabButton isSelected={selectedTopic === 'components'}
@@ -55,6 +56,7 @@ function App() {
              <TabButton isSelected={selectedTopic === 'hooks'}
               onSelect={() => handleSelect('hooks')}>Hooks</TabButton>
           </menu>
+          </div>
           {!selectedTopic ? <p>Please select a topic.</p> : <div id="tab-content">
 
             <h3>{EXAMPLES[selectedTopic].title}</h3>
