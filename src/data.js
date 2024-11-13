@@ -155,7 +155,7 @@ function Counter() {
        npm i -D react-router-dom
       `,
     code: `
-    import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
@@ -207,7 +207,7 @@ root.render(<App />);
   hooks: {
     title: 'Hooks',
     description:
-      'Hooker were added to React in version 16.8. Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.',
+      'Hookes were added to React in version 16.8. Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.',
     code: `
     import React, { useState } from "react";
     import ReactDOM from "react-dom/client";
